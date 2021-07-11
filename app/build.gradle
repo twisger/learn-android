@@ -11,10 +11,32 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        release {
+            storeFile file("${rootProject.projectDir}/keystore/release.keystore")
+            storePassword properties.getProperty("key.password.release")
+            keyAlias 'release.keystore'
+            keyPassword properties.getProperty("key.password.release")
+        }
+        debug {
+            storeFile file("${rootProject.projectDir}/keystore/debug.keystore")
+            storePassword properties.getProperty("key.password.debug")
+            keyAlias 'debug.keystore'
+            keyPassword properties.getProperty("key.password.debug")
+        }
+
+    }
     buildTypes {
         release {
+            signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfigs.debug
+            minifyEnabled false
         }
     }
 }
