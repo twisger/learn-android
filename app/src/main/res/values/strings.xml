@@ -10,7 +10,18 @@
     <string name="button8">button 8</string>
     <string name="button9">button 9</string>
     <string name="button10">button 10</string>
+    <string name="login" translatable="false">login</string>
+    <string name="pick_contact" translatable="false">pick_contact</string>
+    <string name="fragment" translatable="false">fragment</string>
     <string name="main_title">Android practice</string>
     <string name="android_detail" translatable="false">Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</string>
     <string name="java_detail" translatable="false">Java is a High Level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</string>
+    <string name="hello" translatable="false">Hello!</string>
+    <string name="signup" translatable="false">Signup</string>
+    <string name="remember_me" translatable="false">Remember me</string>
+    <string name="forget_password" translatable="false">Forget password?</string>
+    <string name="or_connect_with" translatable="false">or connect with</string>
+    <string name="signup_with_email" translatable="false">Sign up with E-mail</string>
+    <string name="android" translatable="false">Android</string>
+    <string name="java" translatable="false">java</string>
 </resources>
