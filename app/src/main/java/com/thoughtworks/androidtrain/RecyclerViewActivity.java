@@ -5,12 +5,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.androidtrain.data.model.Tweet;
-import com.thoughtworks.androidtrain.data.model.TweetJson;
-import com.thoughtworks.androidtrain.utils.adapters.TweetAdapter;
+import com.thoughtworks.androidtrain.data.json.TweetJson;
+import com.thoughtworks.androidtrain.adapters.TweetAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

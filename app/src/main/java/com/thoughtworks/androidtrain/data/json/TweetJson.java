@@ -1,4 +1,4 @@
-package com.thoughtworks.androidtrain.data.model;
+package com.thoughtworks.androidtrain.data.json;
 
 public class TweetJson {
     public static final String tweetJson = "[\n" +

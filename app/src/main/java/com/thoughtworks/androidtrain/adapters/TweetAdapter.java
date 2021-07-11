@@ -1,4 +1,4 @@
-package com.thoughtworks.androidtrain.utils.adapters;
+package com.thoughtworks.androidtrain.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
