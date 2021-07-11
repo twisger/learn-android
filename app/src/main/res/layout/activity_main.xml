@@ -87,13 +87,14 @@
                     android:textSize="20sp" />
 
                 <Button
+                    android:id="@+id/thread"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/gray"
                     android:paddingVertical="10dp"
-                    android:text="@string/button6"
+                    android:text="@string/thread"
                     android:textAllCaps="false"
                     android:textSize="20sp" />
 

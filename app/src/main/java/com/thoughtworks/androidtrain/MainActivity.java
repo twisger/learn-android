@@ -44,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.recycler_view).setOnClickListener(v -> {
             startActivity(new Intent(this, RecyclerViewActivity.class));
+        });
 
+        findViewById(R.id.thread).setOnClickListener(v -> {
+            startActivity(new Intent(this, ThreadActivity.class));
         });
     }
     @Override

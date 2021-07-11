@@ -26,4 +26,6 @@
     <string name="java" translatable="false">java</string>
     <string name="recycler_view" translatable="false">recycler_view</string>
     <string name="end_tip">No more data</string>
+    <string name="thread" translatable="false">thread</string>
+    <string name="start" translatable="false">start</string>
 </resources>
