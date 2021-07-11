@@ -64,8 +64,6 @@ public class TweetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
                 ViewHolder tweetHolder = (ViewHolder)(holder);
                 String url = tweets.get(position).getSender().getAvatar();
-//                String url = "https://github.githubassets.com/images/modules/logos_page/Octocat.png";
-                Log.d("TAG", "onBindViewHolder: " + url);
                 Glide.with(context).load(url).into(tweetHolder.imageView);
                 tweetHolder.nick.setText(tweets.get(position).getSender().getNick());
                 tweetHolder.content.setText(tweets.get(position).getContent());
