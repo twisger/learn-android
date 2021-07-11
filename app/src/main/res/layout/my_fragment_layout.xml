@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Android"
+            android:text="@string/android"
             android:textAllCaps="false" />
 
         <Button
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Java"
+            android:text="@string/java"
             android:textAllCaps="false" />
     </LinearLayout>
 
