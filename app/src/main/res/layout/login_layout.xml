@@ -1,121 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@color/white"
     tools:context=".LoginActivity">
-    <ImageView
-        android:id="@+id/aware_logo"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:background="@drawable/aware_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="88dp" />
-    <EditText
-        android:id="@+id/login_username"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="Username"
-        android:inputType="text"
-        android:textColorHint="#e4e4e4"
-        android:textSize="12sp"
-        android:textColor="#333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/aware_logo"
-        android:layout_marginTop="78dp"
-        android:background="@drawable/login_input_border"
-        android:paddingStart="25dp" />
-    <EditText
-        android:inputType="textPassword"
-        android:id="@+id/login_password"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:textColorHint="#e4e4e4"
-        android:hint="Password"
-        android:textSize="12sp"
-        android:textColor="#333"
-        app:layout_constraintStart_toStartOf="@id/login_username"
-        app:layout_constraintEnd_toEndOf="@id/login_username"
-        app:layout_constraintTop_toBottomOf="@id/login_username"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/login_input_border"
-        android:paddingStart="25dp" />
-    <CheckBox
-        android:id="@+id/remember_checkbox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textColor="#222"
-        android:textSize="12sp"
-        android:text="Remember me"
-        android:checked="true"
-        android:buttonTint="#1f4ba5"
-        app:layout_constraintTop_toBottomOf="@id/login_password"
-        app:layout_constraintStart_toStartOf="@id/login_password"
-        android:layout_marginTop="37.5dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forget password?"
-        android:textColor="#222"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@id/login_password"
-        app:layout_constraintTop_toTopOf="@id/remember_checkbox"
-        app:layout_constraintBottom_toBottomOf="@id/remember_checkbox" />
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="22.5dp"
-        app:layout_constraintTop_toBottomOf="@id/remember_checkbox"
-        app:layout_constraintStart_toStartOf="@id/login_username"
-        app:layout_constraintEnd_toEndOf="@id/login_username"
-        android:text="Login"
-        android:textColor="#fff"
-        android:textAllCaps="false"
-        android:background="@drawable/login_button" />
-    <TextView
-        android:id="@+id/connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="or connect with"
-        android:textSize="12sp"
-        android:textColor="#b2b2b2"
-        android:layout_marginTop="26.5dp"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
-        app:layout_constraintStart_toStartOf="@id/login_username"
-        app:layout_constraintEnd_toEndOf="@id/login_username" />
-    <Button
-        android:id="@+id/fb"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@id/login_username"
-        app:layout_constraintTop_toBottomOf="@id/connect"
-        android:background="@drawable/fb" />
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@id/login_username"
-        app:layout_constraintTop_toBottomOf="@id/connect"
-        android:background="@drawable/tw" />
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/fb"
-        android:layout_marginTop="85.5dp"
-        android:text="Sign up with E-mail"
-        app:layout_constraintStart_toStartOf="@id/login_username"
-        app:layout_constraintEnd_toEndOf="@id/login_username"
-        android:textColor="#1f4ba5"
-        android:textSize="12sp"
-        android:textAllCaps="false"
-        android:background="@drawable/signup_button" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="44.5dp">
+
+        <ImageView
+            android:id="@+id/aware_logo"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/aware_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="78dp"
+            android:background="@drawable/login_input_border"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aware_logo" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_input_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="25dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/login_username"
+            app:layout_constraintStart_toStartOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@id/login_username" />
+
+        <CheckBox
+            android:id="@+id/remember_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37.5dp"
+            android:buttonTint="@color/buttonTextColor"
+            android:checked="true"
+            android:text="Remember me"
+            android:textColor="@color/blackTextColor"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/login_password"
+            app:layout_constraintTop_toBottomOf="@id/login_password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget password?"
+            android:textColor="@color/blackTextColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/remember_checkbox"
+            app:layout_constraintEnd_toEndOf="@id/login_password"
+            app:layout_constraintTop_toTopOf="@id/remember_checkbox" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/login_button"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/login_username"
+            app:layout_constraintStart_toStartOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@id/remember_checkbox" />
+
+        <TextView
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26.5dp"
+            android:text="or connect with"
+            android:textColor="@color/lightTextColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/login_username"
+            app:layout_constraintStart_toStartOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fb"
+            app:layout_constraintStart_toStartOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@id/connect" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/tw"
+            app:layout_constraintEnd_toEndOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@id/connect" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="85.5dp"
+            android:background="@drawable/signup_button"
+            android:text="Sign up with E-mail"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/login_username"
+            app:layout_constraintStart_toStartOf="@id/login_username"
+            app:layout_constraintTop_toBottomOf="@id/fb" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
