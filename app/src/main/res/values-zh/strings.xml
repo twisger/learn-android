@@ -11,4 +11,6 @@
     <string name="button9">按钮 9</string>
     <string name="button10">按钮 10</string>
     <string name="main_title">Android 练习</string>
+    <string name="end_tip">到底了</string>
+
 </resources>
