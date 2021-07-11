@@ -23,6 +23,7 @@
         android:inputType="text"
         android:textColorHint="#e4e4e4"
         android:textSize="12sp"
+        android:textColor="#333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/aware_logo"
@@ -37,6 +38,7 @@
         android:textColorHint="#e4e4e4"
         android:hint="Password"
         android:textSize="12sp"
+        android:textColor="#333"
         app:layout_constraintStart_toStartOf="@id/login_username"
         app:layout_constraintEnd_toEndOf="@id/login_username"
         app:layout_constraintTop_toBottomOf="@id/login_username"
@@ -51,7 +53,7 @@
         android:textSize="12sp"
         android:text="Remember me"
         android:checked="true"
-
+        android:buttonTint="#1f4ba5"
         app:layout_constraintTop_toBottomOf="@id/login_password"
         app:layout_constraintStart_toStartOf="@id/login_password"
         android:layout_marginTop="37.5dp" />
