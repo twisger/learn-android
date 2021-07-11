@@ -27,7 +27,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private void initUI() {
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        tweetAdapter = new TweetAdapter();
+        tweetAdapter = new TweetAdapter(this);
         recyclerView.setAdapter(tweetAdapter);
         Gson gson = new Gson();
         List<Tweet> tweetList = gson.fromJson(TweetJson.tweetJson, new TypeToken<ArrayList<Tweet>>() {}.getType());
