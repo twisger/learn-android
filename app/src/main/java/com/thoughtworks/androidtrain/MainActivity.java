@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initUI();
 
+    }
+    public void initUI() {
         findViewById(R.id.button1).setOnClickListener(v -> {
             Intent intent = new Intent(this, ConstraintActivity.class);
             startActivity(intent);
@@ -38,8 +41,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.fragment).setOnClickListener(v -> {
             startActivity(new Intent(this, MyFragmentActivity.class));
         });
-    }
 
+        findViewById(R.id.recycler_view).setOnClickListener(v -> {
+            startActivity(new Intent(this, RecyclerViewActivity.class));
+
+        });
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

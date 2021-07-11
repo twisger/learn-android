@@ -75,13 +75,14 @@
                     android:textSize="20sp" />
 
                 <Button
+                    android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/gray"
                     android:paddingVertical="10dp"
-                    android:text="@string/button5"
+                    android:text="@string/recycler_view"
                     android:textAllCaps="false"
                     android:textSize="20sp" />
 
