@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_SELECT_PHONE_NUMBER);
             }
         });
+
+        findViewById(R.id.fragment).setOnClickListener(v -> {
+            startActivity(new Intent(this, MyFragmentActivity.class));
+        });
     }
 
     @Override
