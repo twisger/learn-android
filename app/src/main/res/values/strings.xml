@@ -24,4 +24,5 @@
     <string name="signup_with_email" translatable="false">Sign up with E-mail</string>
     <string name="android" translatable="false">Android</string>
     <string name="java" translatable="false">java</string>
+    <string name="recycler_view" translatable="false">recycler_view</string>
 </resources>
