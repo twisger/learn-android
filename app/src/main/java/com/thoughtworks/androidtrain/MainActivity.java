@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.handler).setOnClickListener(v -> {
             startActivity(new Intent(this, HandlerActivity.class));
         });
+
+        findViewById(R.id.rxjava).setOnClickListener(v -> {
+            startActivity(new Intent(this, RxJavaActivity.class));
+        });
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

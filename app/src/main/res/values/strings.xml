@@ -29,4 +29,6 @@
     <string name="thread" translatable="false">thread</string>
     <string name="start" translatable="false">start</string>
     <string name="handler" translatable="false">handler</string>
+    <string name="rxjava" translatable="false">rxjava</string>
+    <string name="the_number_is" translatable="false">the number is&#160;</string>
 </resources>
