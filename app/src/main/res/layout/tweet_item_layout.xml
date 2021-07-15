@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingEnd="30dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:id="@+id/avatar"
         android:background="@drawable/avatar"
         android:layout_width="60dp"
@@ -14,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
     <TextView
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintTop_toTopOf="@id/avatar"
         android:id="@+id/nick"
@@ -25,9 +26,10 @@
     <TextView
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@id/nick"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nick"
         android:id="@+id/content"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
