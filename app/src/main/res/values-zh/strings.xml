@@ -12,5 +12,7 @@
     <string name="button10">按钮 10</string>
     <string name="main_title">Android 练习</string>
     <string name="end_tip">到底了</string>
-
+    <string name="already_known">知道了</string>
+    <string name="known_tip">提示信息：\n点击"知道了"不再提示</string>
+    <string name="welcome_back">欢迎您回来</string>
 </resources>

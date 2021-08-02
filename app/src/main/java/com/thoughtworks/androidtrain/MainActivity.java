@@ -58,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, RxJavaActivity.class));
         });
 
+        findViewById(R.id.sp).setOnClickListener(v -> {
+            startActivity(new Intent(this, SpActivity.class));
+        });
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
